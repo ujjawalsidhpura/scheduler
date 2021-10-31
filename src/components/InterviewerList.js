@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import classNames from 'classnames';
+import React from "react";
 import InterviewerListItem from "components/InterviewerListItem"
 import "components/InterviewerList.scss"
 
@@ -15,6 +14,8 @@ export default function InterviewerList(props) {
       setInterviewer={() => props.onChange(eachInterviewer.id)}
     />
   )
+
+
 
   return (
     <section className="interviewers">

@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Show(props) {
 
+  //Console log props to check props to understand this destructuring
   const studentName = props.student;
-  const interviewerObj = props.interviewer;
+  const interviewerObj = props.interviewer.interviewer;
   const interviewerName = interviewerObj.name
-  //IntervieweObj is {id,name,avatar}
 
   return (
     <main className="appointment__card appointment__card--show">

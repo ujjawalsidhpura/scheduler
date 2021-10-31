@@ -31,5 +31,37 @@ export function getInterview(state, interview) {
 
 }
 
+export function getInterviewersForDay(state, day) {
+
+  let eachDayInterviewersIDArray;
+
+  for (let eachDay of state.days) {
+    if (eachDay.name === day) {
+      eachDayInterviewersIDArray = eachDay.interviewers
+    }
+  }
+
+  //Check if an Array exist
+  if (!eachDayInterviewersIDArray) {
+    return [];
+  } else {
+
+    let eachDayInterviewersArr = [];
+
+    const interviewersObj = state.interviewers
+    for (let id of eachDayInterviewersIDArray) {
+
+      for (let eachInt in interviewersObj) {
+
+        if (id === interviewersObj[eachInt].id)
+          eachDayInterviewersArr.push(interviewersObj[eachInt])
+
+      }
+
+    }
+    return eachDayInterviewersArr;
+  }
+
+}
 
 
