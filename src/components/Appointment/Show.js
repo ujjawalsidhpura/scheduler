@@ -2,7 +2,6 @@ import React from "react";
 
 export default function Show(props) {
 
-  //Console log props to check props to understand this destructuring
   const studentName = props.student;
   const interviewerObj = props.interviewer.interviewer;
   const interviewerName = interviewerObj.name
@@ -28,7 +27,7 @@ export default function Show(props) {
             className="appointment__actions-button"
             src="images/trash.png"
             alt="Delete"
-            onClick={props.onDelete}
+            onClick={() => props.onDelete()}
           />
         </section>
       </section>

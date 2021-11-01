@@ -32,6 +32,53 @@ export default function Application() {
     })
   }, [])
 
+  // Function to Input/Edit Entry in DB
+  function bookInterview(id, interview) {
+
+    const appointment = {
+      ...state.appointments[id],
+      interview: { ...interview }
+    }
+
+    const appointments = {
+      ...state.appointments,
+      [id]: appointment
+    }
+
+    //1. Make a PUT request to edit DB
+    return axios.put(`http://localhost:8001/api/appointments/${id}`, { ...appointment })
+      .then((res) => {
+        if (res.status === 204) {
+          //2. If response is 204,then only setState to edited DB
+          setState({ ...state, appointments })
+        }
+      })
+      .catch((err) => { throw err })
+
+  }
+
+  // Func to Delete an Entry from DB
+  function cancelInterview(id) {
+
+    const appointment = {
+      ...state.appointments[id],
+      interview: null
+    }
+
+    const appointments = {
+      ...state.appointments,
+      [id]: appointment
+    }
+
+    return axios.delete(`http://localhost:8001/api/appointments/${id}`)
+      .then((res) => {
+        if (res.status === 204) {
+          setState({ ...state, appointments })
+        }
+      })
+      .catch((err) => { throw err })
+  }
+
 
   const interviewers = getInterviewersForDay(state, state.day)
   const dailyAppointments = getAppointmentsForDay(state, state.day);
@@ -50,10 +97,14 @@ export default function Application() {
             interview={appointment.interview}
             interviewers={interviewers}
             interviewer={interviewer}
+            bookInterview={bookInterview}
+            cancelInterview={cancelInterview}
           />
         )
       }
     )
+
+
 
   return (
     <main className="layout">

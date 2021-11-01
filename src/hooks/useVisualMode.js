@@ -12,7 +12,8 @@ export default function useVisualMode(initial) {
       setMode(mode)
     }
 
-    history.push(mode)
+    // history.push(mode)
+    setHistory(prev => ([...prev, mode]))
     setMode(mode)
 
   }
