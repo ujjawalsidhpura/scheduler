@@ -5,7 +5,7 @@ export function getAppointmentsForDay(state, day) {
   const daysArray = state.days;
   for (let eachDay of daysArray) {
     if (eachDay.name === day) {
-      eachDay.appointments.map((eachAppointment) => {
+      eachDay.appointments.forEach((eachAppointment) => {
         output.push(state.appointments[eachAppointment])
       })
     }
