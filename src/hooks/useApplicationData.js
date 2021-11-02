@@ -40,7 +40,6 @@ const useApplicationData = () => {
 
   }
 
-
   // Function to Input/Edit Entry in DB
   function bookInterview(id, interview) {
 
@@ -54,7 +53,6 @@ const useApplicationData = () => {
       [id]: appointment
     }
 
-
     //1. Make a PUT request to edit DB
     return axios.put(`http://localhost:8001/api/appointments/${id}`, { ...appointment })
       .then((res) => {
@@ -67,7 +65,6 @@ const useApplicationData = () => {
         }
       })
       .catch((err) => { throw err })
-
   }
 
   // Func to Delete an Entry from DB
