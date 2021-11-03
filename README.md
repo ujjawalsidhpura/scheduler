@@ -50,10 +50,6 @@ Cypress
 | :---------------------------------------------------------------------------------------------------------------: |
 |                                                     _Cypress_                                                     |
 
-| !["Continous Production Pipeline Using CircleCI"](https://github.com/ujjawalsidhpura/scheduler/blob/master/docs/cypress.png?raw=true) |
-| :-----------------------------------------------------------------------------------------------------------------------------------: |
-|                                            _Continous Production Pipeline Using CircleCI_                                             |
-
 | !["Continous Production Pipeline Using CircleCI"](https://github.com/ujjawalsidhpura/scheduler/blob/production/docs/circleCi.png?raw=true) |
 | :----------------------------------------------------------------------------------------------------------------------------------------: |
 |                                               _Continous Production Pipeline Using CircleCI_                                               |
