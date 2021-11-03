@@ -12,9 +12,9 @@ const useApplicationData = () => {
 
   useEffect(() => {
     Promise.all([
-      axios.get('api/days'),
-      axios.get('api/appointments'),
-      axios.get('api/interviewers'),
+      axios.get('/api/days'),
+      axios.get('/api/appointments'),
+      axios.get('/api/interviewers'),
     ]).then((all) => {
       setState(prev => ({
         ...prev,
@@ -54,7 +54,7 @@ const useApplicationData = () => {
     }
 
     //1. Make a PUT request to edit DB
-    return axios.put(`http://localhost:8001/api/appointments/${id}`, { ...appointment })
+    return axios.put(`/api/appointments/${id}`, { ...appointment })
       .then((res) => {
         if (res.status === 204) {
           setState({
@@ -80,7 +80,7 @@ const useApplicationData = () => {
       [id]: appointment
     }
 
-    return axios.delete(`http://localhost:8001/api/appointments/${id}`)
+    return axios.delete(`/api/appointments/${id}`)
       .then((res) => {
         if (res.status === 204) {
           setState({
