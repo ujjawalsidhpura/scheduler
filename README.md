@@ -1,4 +1,6 @@
-# An Interview Scheduler - A REACT app made using complex data flow and API to learn/demonstrate working with full stack React App and doing project testing using multiple different platforms!
+# An Interview Scheduler
+
+## A REACT app made using complex data flow and API to learn/demonstrate working with full stack React App and doing project testing using multiple different platforms!
 
 Welcome to the world of contact-less transactions. Why should our restaurant Bubbles stay behind in this race...so here we are, our team of 3, created this food delivery app for customers craving some yummy bubble teas. YES, we only sell bubbles teas and Yes we deliver. <br />
 <br />
