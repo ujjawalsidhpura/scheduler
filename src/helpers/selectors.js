@@ -55,10 +55,9 @@ export function getInterviewersForDay(state, day) {
 
         if (id === interviewersObj[eachInt].id)
           eachDayInterviewersArr.push(interviewersObj[eachInt])
-
       }
-
     }
+
     return eachDayInterviewersArr;
   }
 

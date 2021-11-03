@@ -25,13 +25,17 @@ export default function DayListItem(props) {
   const remainingSpotsMessage = formatSpots(props.spots)
 
   return (
+
     <li
       className={dayClass}
       onClick={() => props.onChange(props.name)}
       selected={props.selected}
     >
+
       <h2 className="text--regular">{props.name}</h2>
       <h3 className="text--light">{remainingSpotsMessage}</h3>
+
     </li>
   )
+
 }

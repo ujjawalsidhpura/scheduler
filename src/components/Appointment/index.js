@@ -9,6 +9,7 @@ import Status from "./Status";
 import Error from './Error'
 import Confirm from "./Confirm";
 
+// Variables for User Transitioning 
 const EMPTY = "EMPTY";
 const SHOW = "SHOW";
 const CREATE = "CREATE";
@@ -114,6 +115,7 @@ export default function Appointment(props) {
           onClose={() => transition(CREATE)}
         />
       }
+
       {mode === ERROR_DELETE &&
         <Error
           message="Sorry. An error occured while deleting.Please try again."

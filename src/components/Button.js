@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import "components/Button.scss";
 
 export default function Button(props) {
+
   let buttonClass = classNames(
     'button',
     {
@@ -12,6 +13,7 @@ export default function Button(props) {
   )
 
   return (
+
     <button
       className={buttonClass}
       onClick={props.onClick}
@@ -19,6 +21,7 @@ export default function Button(props) {
     >
       {props.children}
     </button>
+
   )
 }
 

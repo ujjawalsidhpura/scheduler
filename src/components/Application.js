@@ -7,7 +7,7 @@ import { getAppointmentsForDay } from "helpers/selectors";
 import { getInterview } from "helpers/selectors";
 import { getInterviewersForDay } from "helpers/selectors";
 
-export default function Application(props) {
+export default function Application() {
 
   const {
     state,
@@ -38,8 +38,6 @@ export default function Application(props) {
     }
     )
 
-
-
   return (
     <main className="layout">
       <section className="sidebar">
@@ -67,10 +65,12 @@ export default function Application(props) {
 
       </section>
       <section className="schedule">
+
         {parsedAppointments}
         <Appointment
           time="5pm"
         />
+
       </section>
     </main>
   );
