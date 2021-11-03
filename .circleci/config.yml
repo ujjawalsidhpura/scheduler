@@ -39,4 +39,13 @@ workflows:
  version: 2
  test:
   jobs:
-   - build
+   - build:
+    filters:
+            branches:
+              ignore: production
+      - deploy:
+          filters:
+            branches:
+              ignore: production
+          requires:
+            - build
