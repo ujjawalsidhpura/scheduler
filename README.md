@@ -1,15 +1,18 @@
 # An Interview Scheduler
 
+### https://scheduler-ujay.netlify.app/
+
 ## A REACT app made using complex data flow and API to learn/demonstrate working with full stack React App while doing project testing using multiple different platforms!
 
 Scheduler is an app that allower a fictitious user to manage interviews between students and interviewers. User can create,edit,delete interview appointments and each day tab dynamically updates available spots as user proceeds.
 <br />
 <br />
-This is a full-stack app that has been divided into two repos. This repo is a Front-End repo that primarily uses REACT to handle complex structure of events and props. It allowed me to learn so many aspects of a fully functional full stack react webapp.
-To find the repo that mimic backend server and provides API to the front end, please refer (https://github.com/lighthouse-labs/scheduler-api) in Github. Multiple libraries and frameworks were used/learned in making of this project.
+This is a Full-stack, fully functional app that has been deployed on **Netlify** using production version on Github. Netlify will serve static client assets, and **CircleCI** is used to manage continuous integration process. API is served from **Heroku** where my database is hosted using Heroku PostGres addon.
+
+Multiple libraries and frameworks were used/learned in making of this project.
 <br />
 <br />
-Learning to test as project progress has been the moto since day one. This app has been tested using all 4 programming testing ideology: unit, static, integration and end-to-end. This allowed us to learn different stages of testing and QA and understand the importance of which testing to be done under which circumstances. Some snapshots of testing can be found below.
+Learning to test as project progresses has been the moto since day one. This app has been tested using all 4 programming testing ideology: unit, static, integration and end-to-end. This allowed us to learn different stages of testing and QA and understand the importance of which testing to be done under which circumstances. Some snapshots of testing can be found below.
 
 ## Testing
 
@@ -31,9 +34,9 @@ Cypress
 
 ## This is how Scheduler looks.
 
-| !["App Flow "](https://github.com/ujjawalsidhpura/scheduler/blob/master/docs/app_flow.gif?raw=true) |
-| :-------------------------------------------------------------------------------------------------: |
-|                                             _App Flow_                                              |
+| !["App "](https://github.com/ujjawalsidhpura/scheduler/blob/master/docs/app_flow.gif?raw=true) |
+| :--------------------------------------------------------------------------------------------: |
+|                                             _App_                                              |
 
 | !["Unit Testing using Storybook"](https://github.com/ujjawalsidhpura/scheduler/blob/master/docs/storybook.png?raw=true) |
 | :---------------------------------------------------------------------------------------------------------------------: |
@@ -46,6 +49,18 @@ Cypress
 | !["End-to-End using Cypress"](https://github.com/ujjawalsidhpura/scheduler/blob/master/docs/cypress.png?raw=true) |
 | :---------------------------------------------------------------------------------------------------------------: |
 |                                                     _Cypress_                                                     |
+
+| !["Continous Production Pipeline Using CircleCI"](https://github.com/ujjawalsidhpura/scheduler/blob/master/docs/cypress.png?raw=true) |
+| :-----------------------------------------------------------------------------------------------------------------------------------: |
+|                                            _Continous Production Pipeline Using CircleCI_                                             |
+
+| !["Continous Production Pipeline Using CircleCI"](https://github.com/ujjawalsidhpura/scheduler/blob/production/docs/circleCi.png?raw=true) |
+| :----------------------------------------------------------------------------------------------------------------------------------------: |
+|                                               _Continous Production Pipeline Using CircleCI_                                               |
+
+| !["Production Flow"](https://github.com/ujjawalsidhpura/scheduler/blob/production/docs/Production%20Flow.png?raw=true) |
+| :--------------------------------------------------------------------------------------------------------------------: |
+|                                                   _Production Flow_                                                    |
 
 ## Dependencies
 
@@ -65,6 +80,13 @@ Cypress
 - node-sass
 - prop-types
 - Webpack Dev Server
+
+## Production Deployed
+
+- GitHub
+- CircleCI
+- Heroku
+- Netlify
 
 ## Getting Started
 
