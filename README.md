@@ -2,39 +2,69 @@
 
 ## A REACT app made using complex data flow and API to learn/demonstrate working with full stack React App and doing project testing using multiple different platforms!
 
-Welcome to the world of contact-less transactions. Why should our restaurant Bubbles stay behind in this race...so here we are, our team of 3, created this food delivery app for customers craving some yummy bubble teas. YES, we only sell bubbles teas and Yes we deliver. <br />
+Scheduler is an app that allower a fictitious user to manage interviews between students and interviewers. User can create,edit,delete interview appointments and each day shows dynamically about available spots.
 <br />
-User can create profile using our slick login form. Once logged in, user can place orders using +/- tabs to add items to the cart. Once your cart is ready, place an order. Our app will notify us via an SMS with yout order. Don't worry, we will also update YOU via sms on an expected time. <br />
 <br />
-For techsavvy people: this is a full stack app with a local database specially designed by us. You can refer ERD diagram to under entity relations. This is a single page app that leverages best of express , jQuery and other platforms to render best user interface without any page referesh. Great, isn't it!
+This is a full-stack app that has been divided into two repos. This repo is a Front-End repo that primarily uses REACT to handle complex structure of events and props. It allowed us to learn so mnay aspects of a fully functional full stack react webapp.
+To find the repo that mimic backend server and provides API to the front end, please refer lighthouse/scheduler-api in Github.Multiple libraries and frameworks were used/learned in making of this project.
+<br />
+<br />
+Learning to test as project progress has been the moto since day one. This app has been tested using all 4 programming testing ideology: unit, static, integration and end-to-end. This allowed us to learn different stages of testing and QA and understand the importance of which testing to be done under which circumstances. Some snapshots of testing can be found below.
+
+## Testing
+
+### Static
+
+ESlint
+
+### Unit
+
+Storybook
+
+### Integration
+
+Jest
+
+### End-to-End
+
+Cypress
 
 ## This is how it looks.
 
-| !["App Flow "](https://github.com/ujjawalsidhpura/midterm_project/blob/master/docs/finalapp.gif?raw=true) |
-| :-------------------------------------------------------------------------------------------------------: |
-|                                                _App Flow_                                                 |
+| !["App Flow "]() |
+| :--------------: |
+|    _App Flow_    |
 
-| !["ERD"](https://github.com/ujjawalsidhpura/midterm_project/blob/master/docs/erd_database_schema.png?raw=true) |
-| :------------------------------------------------------------------------------------------------------------: |
-|                                             _ERD of Our Database_                                              |
+| !["Unit Testing using Storybook"]() |
+| :---------------------------------: |
+|            _Story Book_             |
+
+| !["Integration test overview from Jest"]() |
+| :----------------------------------------: |
+|                   _Jest_                   |
+
+| !["End-to-End using Storybook"]() |
+| :-------------------------------: |
+|             _Cypress_             |
 
 ## Dependencies
 
-- Express
-- Node 5.10.x or above
-- body-parser
-- bcryptjs
-- bulma
-- chalk
-- cookie-session
-- dotenv
-- ejs
-- morgan
-- node-sass-middleware
-- path
-- pg
-- pg-native
-- twilio
+- Axios
+- babel-loader
+- babel/core
+- storybook/addon-actions
+- storybook/addon-backgrounds
+- storybook/addon-links
+- storybook/addons
+- storybook/react
+- testing-library/jest-dom
+- testing-library/react
+- testing-library/react-hooks
+- react-test-renderer
+- cypress
+- node-sass
+- prop-types
+- Webpack Dev Server
 
 ## Getting Started
 
@@ -44,24 +74,26 @@ For techsavvy people: this is a full stack app with a local database specially d
 
 Install dependencies with `npm install`.
 
-## Running Webpack Development Server
+### Running Webpack Development Server
 
 ```sh
 npm start
 ```
 
-## Running Jest Test Framework
+### Running Jest Test Framework
 
 ```sh
 npm test
 ```
 
-## Running Storybook Visual Testbed
+### Running Storybook Visual Testbed
 
 ```sh
 npm run storybook
 ```
 
-## NOTE
+### Running Cypress
 
-Special thanks to everyone at Lighthouse labs, Toronto for giving us a chance to create such project and providing with the basic framework of this app via LHL template. We would also like to give our gratitude to all the mentors who guides us during this project.
+```sh
+npm run cypress
+```
