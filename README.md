@@ -31,21 +31,21 @@ Cypress
 
 ## This is how it looks.
 
-| !["App Flow "]() |
-| :--------------: |
-|    _App Flow_    |
+| !["App Flow "](https://github.com/ujjawalsidhpura/scheduler/blob/master/docs/app_flow.gif?raw=true) |
+| :-------------------------------------------------------------------------------------------------: |
+|                                             _App Flow_                                              |
 
-| !["Unit Testing using Storybook"]() |
-| :---------------------------------: |
-|            _Story Book_             |
+| !["Unit Testing using Storybook"](https://github.com/ujjawalsidhpura/scheduler/blob/master/docs/storybook.png?raw=true) |
+| :---------------------------------------------------------------------------------------------------------------------: |
+|                                                      _Story Book_                                                       |
 
-| !["Integration test overview from Jest"]() |
-| :----------------------------------------: |
-|                   _Jest_                   |
+| !["Integration test overview from Jest"](https://github.com/ujjawalsidhpura/scheduler/blob/master/docs/jest.png?raw=true) |
+| :-----------------------------------------------------------------------------------------------------------------------: |
+|                                                          _Jest_                                                           |
 
-| !["End-to-End using Storybook"]() |
-| :-------------------------------: |
-|             _Cypress_             |
+| !["End-to-End using Cypress"](https://github.com/ujjawalsidhpura/scheduler/blob/master/docs/cypress.png?raw=true) |
+| :---------------------------------------------------------------------------------------------------------------: |
+|                                                     _Cypress_                                                     |
 
 ## Dependencies
 
@@ -67,8 +67,6 @@ Cypress
 - Webpack Dev Server
 
 ## Getting Started
-
-# Interview Scheduler
 
 ## Setup
 
