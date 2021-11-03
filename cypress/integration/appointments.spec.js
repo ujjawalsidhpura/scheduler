@@ -20,7 +20,7 @@ describe('should book an interview', () => {
       .type('Lydia Miller-Jones')
     cy.get("[alt='Sylvia Palmer']")
       .click()
-    // cy.get('[alt=\'Sylvia Palmer\']').click() same thing
+    // cy.get('[alt=\'Sylvia Palmer\']').click() //same//
     cy.contains('Save')
       .click()
 

@@ -107,6 +107,7 @@ export default function Appointment(props) {
           onConfirm={onDelete}
         />
       }
+
       {mode === ERROR_SAVE &&
         <Error
           message="Sorry. An error occured while saving.Please try again."
@@ -116,7 +117,7 @@ export default function Appointment(props) {
       {mode === ERROR_DELETE &&
         <Error
           message="Sorry. An error occured while deleting.Please try again."
-          onClose={() => transition(EDIT)}
+          onClose={() => transition(SHOW)}
         />
       }
 
