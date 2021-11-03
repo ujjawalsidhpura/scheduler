@@ -1,12 +1,12 @@
 # An Interview Scheduler
 
-## A REACT app made using complex data flow and API to learn/demonstrate working with full stack React App and doing project testing using multiple different platforms!
+## A REACT app made using complex data flow and API to learn/demonstrate working with full stack React App while doing project testing using multiple different platforms!
 
-Scheduler is an app that allower a fictitious user to manage interviews between students and interviewers. User can create,edit,delete interview appointments and each day shows dynamically about available spots.
+Scheduler is an app that allower a fictitious user to manage interviews between students and interviewers. User can create,edit,delete interview appointments and each day tab dynamically updates available spots as user proceeds.
 <br />
 <br />
-This is a full-stack app that has been divided into two repos. This repo is a Front-End repo that primarily uses REACT to handle complex structure of events and props. It allowed us to learn so mnay aspects of a fully functional full stack react webapp.
-To find the repo that mimic backend server and provides API to the front end, please refer lighthouse/scheduler-api in Github.Multiple libraries and frameworks were used/learned in making of this project.
+This is a full-stack app that has been divided into two repos. This repo is a Front-End repo that primarily uses REACT to handle complex structure of events and props. It allowed me to learn so many aspects of a fully functional full stack react webapp.
+To find the repo that mimic backend server and provides API to the front end, please refer (https://github.com/lighthouse-labs/scheduler-api) in Github. Multiple libraries and frameworks were used/learned in making of this project.
 <br />
 <br />
 Learning to test as project progress has been the moto since day one. This app has been tested using all 4 programming testing ideology: unit, static, integration and end-to-end. This allowed us to learn different stages of testing and QA and understand the importance of which testing to be done under which circumstances. Some snapshots of testing can be found below.
@@ -29,7 +29,7 @@ Jest
 
 Cypress
 
-## This is how it looks.
+## This is how Scheduler looks.
 
 | !["App Flow "](https://github.com/ujjawalsidhpura/scheduler/blob/master/docs/app_flow.gif?raw=true) |
 | :-------------------------------------------------------------------------------------------------: |
